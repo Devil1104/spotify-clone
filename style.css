@@ -5,15 +5,20 @@ body{
     color: white;
     overflow: hidden;
 }
+
 .music-player{
     background-color: black;
     position: fixed;
     bottom: 0px;
-    width: 10000px;
+    width: 100%;
     height: 72px;
     margin-left: 0rem;
     padding-left: 0rem;
+    left: 0;
+   
 }
+
+
 
 .main{
     display: flex;
@@ -45,6 +50,8 @@ a{
     
 }
 
+
+
 .nav{
     background-color: #121212;
     border-radius: 1rem;
@@ -61,7 +68,7 @@ a{
     padding: 0.25rem 0.75rem;
 }
 
-.nav-option :hover{
+.nav-option:hover{
     opacity: 1;
 }
  
@@ -74,7 +81,6 @@ a{
     font-size: 1rem;
     margin-left:1rem;
 }
-
 .lib-option img{
     height: 1.25rem;
     width: 1.25rem;
@@ -227,4 +233,148 @@ a{
 
 .music-player{
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+   
+}
+
+.player{
+    width: 50%;
+  
+}
+
+.controls{
+    width: 25%;
+    
+}
+
+.player-control-icon{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 1.75rem;
+    opacity: 70%;
+}
+.player-control-icon:hover{
+    opacity: 100%;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.progress-bar{
+    align-items: center;
+    justify-content: center;
+    
+}
+.playback-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.album{
+    display: flex;
+    
+}
+.album-photo{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+    border-radius: 2px;
+}
+
+.daylight{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+
+}
+.david{
+    display: flex;
+    font-size: 0.75rem;
+    margin-top: 2rem;
+    margin-left: -72px;
+}   
+.fa-regular.fa-heart{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.fa-solid.fa-square-minus{
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+}
+
+.controls{
+    justify-content: space-between;
+    display: flex;
+    width: 25rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    opacity: 0.8;
+}
+.volume-bar{
+    margin-right: 4rem;
+}
+
+.volume-bar{
+    width: ;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.volume-bar::-webkit-slider-runnable-track{
+    background-color: #bcbcbc;
+    border-radius: 100px;
+    height: 0.25rem;
+    opacity: 1;
+}
+
+.volume-bar::-webkit-slider-thumb{
+    appearance: none;
+    background-color:rgb(255, 255, 255);
+    height: 4px;
+    width: 20px;
+    margin-top: ;
+    opacity: 1;
+}
+@media (max-width: 808px){
+    .controls{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    .album{
+        display: none;
+    }
 }
